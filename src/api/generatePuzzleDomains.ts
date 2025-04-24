@@ -5,7 +5,7 @@ export const generatePuzzleDomains = async (
   domainCount = 4,
   maxItems = 7
 ): Promise<{ domains: PuzzleDomain[] } | null> => {
-  const apiKey = import.meta.env.VITE_OPENAI_API_KEY;
+  //const apiKey = import.meta.env.VITE_OPENAI_API_KEY; // Commented out for Vercel
   const prompt = generatePrompt(domainCount, maxItems);
 
   try {

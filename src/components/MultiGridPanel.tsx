@@ -8,7 +8,6 @@ interface MultiGridPanelProps {
 }
 
 const MultiGridPanel: React.FC<MultiGridPanelProps> = ({ domains }) => {
-  const size = domains.length;
 
   return (
     <div className="logic-matrix">
