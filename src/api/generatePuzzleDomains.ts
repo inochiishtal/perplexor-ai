@@ -9,6 +9,7 @@ export const generatePuzzleDomains = async (
   const prompt = generatePrompt(domainCount, maxItems);
 
   try {
+    /*
     const response = await fetch('https://api.openai.com/v1/chat/completions', {
       method: 'POST',
       headers: {
@@ -21,14 +22,19 @@ export const generatePuzzleDomains = async (
         temperature: 0.7,
       }),
     });
+    */
+    // Commenting above to use Vercel deployment
+    const response = await fetch('/api/generatePuzzle', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ prompt }),
+    });
 
     const data = await response.json();
     const rawText = data.choices?.[0]?.message?.content;
     console.log('AI Raw Text:', rawText);
 
     if (!rawText) throw new Error('No content returned by AI');
-
-    const parsedRaw = JSON.parse(rawText);
 
     const parsed = JSON.parse(rawText);
 

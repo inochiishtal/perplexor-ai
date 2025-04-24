@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import MultiGridPanel from './MultiGridPanel';
 import { generatePuzzleDomains } from '../api/generatePuzzleDomains';
 import { PuzzleData } from '../types/types';
 import GroupedLogicMatrix from './GroupedLogicMatrix';
