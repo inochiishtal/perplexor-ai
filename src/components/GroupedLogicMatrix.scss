@@ -1,0 +1,40 @@
+.grouped-logic-matrix {
+    border-collapse: collapse;
+    margin: 1rem auto;
+  
+    th,
+    td {
+      border: 1px solid #ccc;
+      padding: 8px 12px;
+      text-align: center;
+      white-space: nowrap;
+    }
+  
+    .domain-label {
+      background-color: #e0e0e0;
+      font-weight: bold;
+    }
+  
+    .domain-label-vertical {
+      background-color: #e0e0e0;
+      font-weight: bold;
+      text-align: right;
+    }
+  
+    .item-label {
+      background-color: #f8f8f8;
+      font-style: italic;
+    }
+  
+    .logic-cell {
+      cursor: pointer;
+      width: 40px;
+      height: 40px;
+      font-size: 20px;
+  
+      &:hover {
+        background-color: #eef;
+      }
+    }
+  }
+  
