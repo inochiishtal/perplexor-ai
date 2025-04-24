@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-# perplexor-ai
-A simple AI-generated logic puzzle UI fed by OpenAI.
-=======
-# React + TypeScript + Vite
+# perplexor-ai | React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
@@ -56,4 +52,3 @@ export default tseslint.config({
   },
 })
 ```
->>>>>>> master
