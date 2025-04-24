@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { generatePuzzleDomains } from '../api/generatePuzzleDomains';
+import { generatePuzzleDomains } from '../../api/generatePuzzleDomains';
 import { PuzzleData } from '../types/types';
 import GroupedLogicMatrix from './GroupedLogicMatrix';
 
